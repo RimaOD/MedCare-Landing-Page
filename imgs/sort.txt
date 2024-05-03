@@ -1,0 +1,5 @@
+<item>@drawable/ic_undraw_doctor_kw5l</item>
+        <item>@drawable/ic_undraw_the_search_s0xf</item>
+        <item>@drawable/ic_undraw_medical_research_qg4d</item>
+        <item>@drawable/ic_undraw_post_re_mtr4</item>
+        <item>@drawable/ic_undraw_destinations_fpv7</item>

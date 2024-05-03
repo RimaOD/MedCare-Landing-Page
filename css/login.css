@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(0, 0, 0, 0.74);
+}
+
+.login
+{
+    position: relative;
+    min-height: 100vh;
+    background-image: url("cover - 2@2x.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+.login .login__container
+{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);  
+    border-radius: 15px;
+    overflow: hidden;   
+}
+
+.login .login__container .user
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.login .login__container .user .imgBx
+{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    transition: 0.5;
+}
+
+.login .login__container .user .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.login .login__container .user .formBx
+{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    display: grid;
+    justify-content: left;
+    align-items: ltr;
+    padding: 50px;
+    transition: 0.5s;
+}
+
+.login .login__container .user .formBx::-webkit-scrollbar
+{
+    width: 8px;
+    border-radius: 8px 0 0 8px;
+}
+
+.login .login__container .user .formBx::-webkit-scrollbar-thumb
+{
+    background: #c1c1c1;
+    border-radius: 8px 0 0 8px;
+}
+
+.login .login__container .user .formBx h2 
+{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #1e272e;
+    
+}
+
+.login .login__container .user .formBx p
+{
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.login .login__container .user .formBx h3
+{
+    color: #1e272e;
+}
+
+.login .login__container .user .formBx .General,
+.login .login__container .user .formBx .Main,
+.login .login__container .user .formBx .Account,
+.DoctorDiv .clinic-information .clinic
+{
+    background: #fff;
+    padding: 0 0 0 8px;
+    margin: 15px 0 15px 0;
+    border-left: 4px solid #ff3f34;
+}
+
+.login .login__container .user .formBx label
+{
+    color: #1e272e;
+    font-size: 15px;
+}
+
+.login .login__container .user .formBx input
+{
+    width: 100%;
+    padding: 12px 24px;
+    background: #f5f5f5;
+    color: rgba(0, 0, 0, 0.74);
+    border: 1px solid #e2e2e2;
+    outline: none;
+    box-shadow: none;
+    font-size: 14px;
+    margin: 8px 0;
+    letter-spacing: 1px;
+    font-weight: 300;
+    border-radius: 20px;
+}
+
+.login .login__container .user .formBx input[type="submit"]
+{
+    max-width: 100px;
+    background: #ff3f34;
+    color: #fff;
+    padding: 10px 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    transition: 0.25s;
+}
+
+.login .login__container .user .formBx input[type="submit"]:hover
+{
+    background: rgba(255, 255, 255, 0.822);
+    color: #ff3f34;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid #ff3f34;
+}
+
+.login .login__container .user .formBx .signup
+{
+    position: relative;
+    margin-top: 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #555;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.login .login__container .user .formBx .signup a
+{
+    font-size: 600;
+    text-decoration: none;
+    color: #577eff;
+}
+
+.login .login__container .signupBx
+{
+    pointer-events: none;
+}
+
+.login .login__container.active .signupBx
+{
+    pointer-events: initial;
+}
+
+.login .login__container .signupBx .formBx 
+{
+    top: 100%;
+}
+
+.login .login__container.active .signupBx .formBx 
+{
+    top: 0;
+    overflow: auto;
+    display: block;
+}
+
+.login .login__container .signupBx .imgBx
+{
+    top: -100%;
+    transition: 0.5s;
+}
+
+.login .login__container.active .signupBx .imgBx
+{
+    top: 0;
+}
+
+.login .login__container .signinBx
+{
+    top: 0;
+
+}
+
+.login .login__container.active .signinBx .formBx
+{
+    top: 100%;
+    
+}
+
+.login .login__container .signinBx .imgBx
+{
+    top: 0;
+    transition: 0.5s;
+
+}
+
+.login .login__container.active .signinBx .formBx .imgBx
+{
+    top: -100%;
+    
+}
+
+@media (max-width: 991px)
+{
+    .login .login__container
+    {
+        max-width: 400px;
+    }
+    .login .login__container .imgBx
+    {
+        display: none;
+    }
+    .login .login__container .user .formBx
+    {
+        width: 100%;
+    }
+    .login .login__container.active .signinBx .formBx
+    {
+        top: -100%;
+    }  
+      
+}
+
+.select-box,
+.select-box2,
+.select-box3,
+.select-box4,
+.select-box5,
+.select-box6
+{
+    display: flex;
+    width: auto;
+    flex-direction: column;
+}
+
+.select-box
+{
+    margin-top: 8px;
+}
+
+.select-box2
+{
+    margin-top: -13px;
+}
+
+.select-box3,
+.select-box4,
+.select-box5,
+.select-box6
+
+{
+    margin: 8px 0;
+}
+
+.select-box .options-container,
+.select-box2 .options-container2,
+.select-box3 .options-container3,
+.select-box4 .options-container4,
+.select-box5 .options-container5,
+.select-box6 .options-container6
+{
+    background: #f5f5f5;
+    color: rgba(0, 0, 0, 0.74);
+    max-height: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.4s;
+    border-radius: 20px;
+    overflow: hidden;
+    
+    order: 1;
+}
+
+.select-box .options-container
+{
+    margin-bottom: 10px;
+}
+      
+.selected,
+.selected2,
+.selected3,
+.selected4,
+.selected5,
+.selected6
+{
+    padding: 10px;
+    background: #f5f5f5;
+    border: 1px solid #e2e2e2;
+    border-radius: 20px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.74);
+    position: relative;
+    
+    order: 0;
+}   
+
+.selected2
+{
+    height: 48px;
+}
+      
+.selected::after,
+.selected2::after,
+.selected3::after,
+.selected4::after,
+.selected5::after,
+.selected6::after
+{
+    content: "";
+    background: url("arrow-down.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 32px;
+    right: 10px;
+    top: 5px;
+
+    transition: all 0.4s;
+}
+      
+.select-box .options-container.active,
+.select-box2 .options-container2.active,
+.select-box3 .options-container3.active,
+.select-box4 .options-container4.active,
+.select-box5 .options-container5.active,
+.select-box6 .options-container6.active
+{
+    max-height: 240px;
+    opacity: 1;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+}
+      
+.select-box .options-container.active + .selected::after,
+.select-box2 .options-container2.active + .selected2::after,
+.select-box3 .options-container3.active + .selected3::after,
+.select-box4 .options-container4.active + .selected4::after,
+.select-box5 .options-container5.active + .selected5::after,
+.select-box6 .options-container6.active + .selected6::after
+{
+    transform: rotateX(180deg);
+    top: -6px;
+}
+      
+.select-box .options-container::-webkit-scrollbar,
+.select-box2 .options-container2::-webkit-scrollbar,
+.select-box3 .options-container3::-webkit-scrollbar,
+.select-box4 .options-container4::-webkit-scrollbar,
+.select-box5 .options-container5::-webkit-scrollbar,
+.select-box6 .options-container6::-webkit-scrollbar
+{
+    width: 8px;
+    /* background: #0d141f; */
+    border-radius: 0 8px 8px 0;
+}
+      
+.select-box .options-container::-webkit-scrollbar-thumb,
+.select-box2 .options-container2::-webkit-scrollbar-thumb,
+.select-box3 .options-container3::-webkit-scrollbar-thumb,
+.select-box4 .options-container4::-webkit-scrollbar-thumb,
+.select-box5 .options-container5::-webkit-scrollbar-thumb,
+.select-box6 .options-container6::-webkit-scrollbar-thumb
+{
+    background: #c1c1c1;
+    border-radius: 0 8px 8px 0;
+}
+      
+.select-box .option,
+.selected,
+.select-box2 .option2,
+.selected2,
+.select-box3 .option3,
+.selected3,
+.select-box4 .option4,
+.selected4,
+.select-box5 .option5,
+.selected5,
+.select-box6 .option6,
+.selected6
+{
+    padding: 12px 24px;
+    cursor: pointer;
+}
+      
+.select-box .option:hover,
+.select-box2 .option2:hover,
+.select-box3 .option3:hover,
+.select-box4 .option4:hover,
+.select-box5 .option5:hover,
+.select-box6 .option6:hover
+{
+    background: #e6e7e9;
+}
+
+.select-box label,
+.select-box2 label,
+.select-box3 label,
+.select-box4 label,
+.select-box5 label,
+.select-box6 label
+{
+    cursor: pointer;
+}
+
+.select-box .option .radio,
+.select-box2 .option2 .radio,
+.select-box3 .option3 .radio,
+.select-box4 .option4 .radio,
+.select-box5 .option5 .radio,
+.select-box6 .option6 .radio
+{
+    display: none;
+}
+
+.image-upload > input
+{
+    display: none;
+}
+
+.image-upload .fa
+{
+    width: 80px;
+    cursor: pointer;
+}
+
+.imgproBx 
+{
+    background: #f5f5f5;
+    border-radius: 15px;
+    border: 1px solid #e2e2e2;
+    padding: 8px 0 0 10px;
+    margin: 15px 0 15px 0;
+    display: flex;
+}
+
+.imgproBx .image-upload
+{
+    background: #f5f5f5;
+    border-radius: 8px;
+    padding: 5px 0 0 15px;
+}
+
+.CitizenDiv,
+.DoctorDiv
+{
+    transition: all 0.5s;
+}
+
+.DoctorDiv .joinUsBx
+{
+    width: 100%;
+    padding: 15px;
+    margin: 8px 0;
+    background: #f5f5f5;
+    color: rgba(0, 0, 0, 0.74);
+    text-align: ltr;
+    /* box-shadow: 0 10px 30px rgba(255, 255, 255, 1); */
+    border-radius: 15px;
+    border: 1px solid #e2e2e2;
+
+}
+
+.joinUsBx h3
+{
+    color: #1e272e;
+}
+
+.joinUsBx .checkBx
+{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-wrap: wrap;
+    margin: 5px;  
+}
+
+.joinUsBx .checkBx label
+{
+    cursor: pointer;
+}
+
+.joinUsBx .checkBx label input[type="checkbox"]
+{
+    display: none;
+}
+
+.joinUsBx .checkBx label span
+{
+    position: relative;
+    display: inline-block;
+    background: #424242;
+    padding: 10px 20px;
+    color: #555;
+    text-shadow: 0 1px 4px rgba(0,0,0,.5);
+    border-radius: 30px;
+    font-size: 14px;
+    transition: 0.5s;
+    user-select: none;
+    overflow: hidden;
+}
+
+.joinUsBx .checkBx label span::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: rgba(255,255,255,.1);
+}
+
+.joinUsBx .checkBx label input[type="checkbox"]:checked ~ span
+{
+    background: #ff3f34;
+    color: #fff;
+    box-shadow: 0 2px 20px #ff3f34;
+}

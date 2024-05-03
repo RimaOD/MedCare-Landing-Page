@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/login.css">
+
+        <title>MedCare</title>
+    </head>
+    <body>
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+        </a>
+        
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo"><img src="imgs/heart.svg" alt="SyrianMedCare"></a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#features" class="nav__link">Features</a></li>
+                        <li class="nav__item"><a href="#login" class="nav__link">Login</a></li>
+                        <li class="nav__item"><a href="#ContactUs" class="nav__link">Contact Us</a></li>
+
+                        <li><i class='bx bx-toggle-left change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--========== HOME ==========-->
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__img">
+                        <img src="imgs/health-care-01.png" alt="">
+                    </div>
+
+                    <div class="home__data">
+                        <h2 class="home__title">Welcome To MedCare Website!</h2>
+                        <p class="home__description">a new way for a new health care service we are the <span class="u-text">first </span><span class="u-text">online </span><span class="u-text">smart </span> medical service in <span class="b-text">Our Country</span>.</p>
+                        <a href="#login" class="button">LOGIN</a>
+                    </div>   
+                </div>
+            </section>
+
+            <!--========== FEATURES ==========-->
+            <section class="features section bd-container" id="features">
+                <div class="features__container bd-grid">
+                    <div class="features__data">
+                        <h3>Contact with doctors in a new way</h3>
+                        <p>We offer online medical services to communicate with the specialist doctor from your home or anywhere you are, through a private chat room.</p>
+                    </div>
+
+                    <div class="features__img">
+                        <img src="imgs/undraw_doctor_kw5l.svg" alt="">
+                    </div>
+
+                    <div class="features__data">
+                        <h3>Smart search to know your illness</h3>
+                        <p>This system is based on smart search according to the symptoms entered, in order to diagnose the type of disease and direct the user to a specialist doctor.</p>
+                    </div>
+
+                    <div class="features__img">
+                        <img src="imgs/undraw_the_search_s0xf.svg" alt="">
+                    </div>
+                </div>
+                <div class="features__container bd-grid">
+                    <div class="features__data">
+                        <h3>Live COVID-19 virus tracker</h3>
+                        <p>In addition to the service of knowing the latest news of COVID-19 cases around the world.</p>
+                    </div>
+
+                    <div class="features__img">
+                        <img src="imgs/undraw_medical_research_qg4d.svg" alt="">
+                    </div>
+
+                    <div class="features__data">
+                        <h3>Get in touch with latest medical news</h3>
+                        <p>It also provide the latest medical news service by publishing doctors posts.</p>
+                    </div>
+
+                    <div class="features__img">
+                        <img src="imgs/undraw_Post_re_mtr4.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="features__container bd-grid">
+                    <div class="features__data">
+                        <h3>Navigate to hospitals, clinics near to you</h3>
+                        <p>It helps guide you to the nearest medical point in your area, such as a clinic or hospital.</p>
+                    </div>
+
+                    <div class="features__img">
+                        <img src="imgs/undraw_destinations_fpv7.svg" alt="">
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!--========== LOGIN ==========-->
+            <section class="login section bd-container" id="login">
+                <div class="login__container bd-grid">
+                    <div class="login__container">
+                        <div class="user signinBx" id="signin">
+                          <div class="imgBx"><img src="imgs/shutterstock_1.jpg"></div>
+                          <div class="formBx">
+                            <form>
+                              <h2>Sign In</h2>
+                              <label for="phone">Phone Number</label>
+                              <input type="tel" id="phone-in" name="phone"  value="+963 " >   
+                              <label for="password">Password</label>
+                              <input type="password" placeholder="Password" id="password" >
+                              <input type="submit" value="Login">
+                              <p class="signup">don't have an account?<a href="#signup" onclick="toggleForm();">Sign up.</a></p>
+                            </form>
+                          </div>
+                        </div>
+                        <div class="user signupBx" id="signup">
+                          <div class="formBx">
+                            <form>
+                              <h2>Sign up</h2>
+                              <p>create a new account just in few steps</p>
+                              <div class="General iformation">
+                                <h3>General Information</h3>
+                                <p>set your general account information</p>  
+                              </div>
+                              <label for="id" >Syrian ID</label>
+                              <input type="number" placeholder="0000000000" id="id" required>
+                              <label for="fullnameEn" >Full Name (english)</label>
+                              <input type="text" placeholder="First" name="fnameEn" id="fnameEn" required>
+                              <input type="text" placeholder="Middle" name="mnameEn" id="mnameEn" required>
+                              <input type="text" placeholder="Last" name="lnameEn" id="lnameEn" required>
+                              <label for="fullnameAr" >Full Name (arabic)</label>
+                              <input type="text" placeholder="First" name="fnameAr" id="fnameAr" required>
+                              <input type="text" placeholder="Middle" name="mnameAr" id="mnameAr" required>
+                              <input type="text" placeholder="Last" name="lnameAr" id="lnameAr" required>
+                              <label for="phone">Phone Number</label>
+                              <input type="tel" id="phone-up" name="phone" value="+963 " placeholder="999999999" required>   
+                              <label for="pass">Password</label>
+                              <input type="password" id="pass" placeholder="create password" required>
+                              <label for="cnfrmpass">Confirm Password</label>
+                              <input type="password" id="cnfrmpass" placeholder="confirm password" required>
+                              <div class="Main information">
+                                <h3>Main Information</h3>
+                                <p>Set information about your health</p>  
+                              </div>
+                              <label for="weight">Weight</label>
+                              <input type="number" placeholder="Weight in Kilogram" min="2" max="300" required>
+                              <label for="height">Height</label>
+                              <input type="number" placeholder="Height in Centimeter" min="50" max="250" required>
+                    
+                              <div class="select">
+                                <label for="blood type" class="bldtyp">Blood type</label>
+                                  <div class="select-box">
+                                    <div class="selected">
+                                      Select Blood type
+                                    </div>
+                                    <div class="options-container">
+                                      <div class="option">
+                                        <input
+                                          type="radio"
+                                          class="radio"
+                                          id="A"
+                                          name="category"
+                                        />
+                                        <label for="A">A</label>
+                                      </div>
+                                      <div class="option">
+                                        <input type="radio" class="radio" id="AB" name="category" />
+                                        <label for="AB">AB</label>
+                                      </div>
+                                      <div class="option">
+                                        <input type="radio" class="radio" id="O" name="category" />
+                                        <label for="O">O</label>
+                                      </div>
+                                      <div class="option">
+                                        <input type="radio" class="radio" id="B" name="category" />
+                                        <label for="B">B</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="select2">
+                                <div class="select-box2">
+                                  <div class="selected2">
+                                  </div>
+                                  <div class="options-container2">
+                                    <div class="option2">
+                                      <input
+                                        type="radio"
+                                        class="radio"
+                                        id="pos"
+                                        name="category"
+                                      />
+                                      <label for="pos">+</label>
+                                    </div>
+                                    <div class="option2">
+                                      <input type="radio" class="radio" id="neg" name="category" />
+                                      <label for="neg">-</label>
+                                    </div>
+                                  </div>   
+                                </div>
+                              </div>
+                              <div class="Account type">
+                                <h3>Account Type</h3>
+                                <p>Set your account type and complete your information</p>  
+                              </div>
+                              <div class="imgproBx">
+                                <div class="imgpro">
+                                  <h3 class="profimg">Profile image</h3>
+                                  <p>set your profile picture</p>      
+                                </div>
+                                <div class="image-upload">
+                                    <label for="file-input">
+                                      <i class="fa fa-user-circle-o" style="font-size:48px;color:red"></i>
+                                    </label>
+                                    <input id="file-input" type="file"/>
+                                </div>
+                              </div>
+                              <div class="select3">
+                                <label for="city" class="city">City</label>
+                                <div class="select-box3">
+                                  <div class="selected3">
+                                    Your current city
+                                  </div>
+                                  <div class="options-container3">
+                                    <div class="option3">
+                                      <input
+                                        type="radio"
+                                        class="radio"
+                                        id="Damas"
+                                        name="category"
+                                      />
+                                      <label for="Damas">Damascus</label>
+                                    </div>
+                                    <div class="option3">
+                                      <input
+                                        type="radio"
+                                        class="radio"
+                                        id="Hamah"
+                                        name="category"
+                                      />
+                                      <label for="Hamah">Hamah</label>
+                                    </div>
+                                    <div class="option3">
+                                      <input
+                                        type="radio"
+                                        class="radio"
+                                        id="Dar'a"
+                                        name="category"
+                                      />
+                                      <label for="Dar'a">Dar'a</label>
+                                    </div>
+                                    <div class="option3">
+                                      <input
+                                        type="radio"
+                                        class="radio"
+                                        id="Idlib"
+                                        name="category"
+                                      />
+                                      <label for="Idlib">Idlib</label>
+                                    </div>
+                                    <div class="option3">
+                                      <input
+                                        type="radio"
+                                        class="radio"
+                                        id="Aleppo"
+                                        name="category"
+                                      />
+                                      <label for="Aleppo">Aleppo</label>
+                                    </div>
+                                    <div class="option3">
+                                      <input
+                                        type="radio"
+                                        class="radio"
+                                        id="Tartus"
+                                        name="category"
+                                      />
+                                      <label for="Tartus">Tartus</label>
+                                    </div>
+                                    <div class="option3">
+                                      <input
+                                        type="radio"
+                                        class="radio"
+                                        id="Homs"
+                                        name="category"
+                                      />
+                                      <label for="Homs">Homs</label>
+                                    </div>
+                                    <div class="option3">
+                                      <input
+                                        type="radio"
+                                        class="radio"
+                                        id="Dayer al-Zawr"
+                                        name="category"
+                                      />
+                                      <label for="Dayer al-Zawr">Dayer al-Zawr</label>
+                                    </div>
+                                    <div class="option3">
+                                      <input
+                                        type="radio"
+                                        class="radio"
+                                        id="Al-Raqqah"
+                                        name="category"
+                                      />
+                                      <label for="Al-Raqqah">Al-Raqqah</label>
+                                    </div>
+                                    <div class="option3">
+                                      <input
+                                        type="radio"
+                                        class="radio"
+                                        id="Latakia"
+                                        name="category"
+                                      />
+                                      <label for="Latakia">Latakia</label>
+                                    </div>
+                                  </div>   
+                                </div>
+                              </div>
+                              <div class="select4">
+                                <label for="gender" class="gender">Gender</label>
+                                <div class="select-box4">
+                                  <div class="selected4">
+                                    set your gender
+                                  </div>
+                                  <div class="options-container4">
+                                    <div class="option4">
+                                      <input
+                                        type="radio"
+                                        class="radio"
+                                        id="male"
+                                        name="category"
+                                      />
+                                      <label for="male">male</label>
+                                    </div>
+                                    <div class="option4">
+                                      <input 
+                                        type="radio"
+                                        class="radio"
+                                        id="female"
+                                        name="category"
+                                      />
+                                      <label for="female">female</label>
+                                    </div>
+                                  </div>   
+                                </div>
+                              </div>
+                              <div class="select5">
+                                <label for="register" class="register">Register as</label>
+                                <div class="select-box5">
+                                  <div class="selected5">
+                                    -
+                                  </div>
+                                  <div class="options-container5">
+                                    <div class="option5">
+                                      <input
+                                        type="radio"
+                                        class="radio"
+                                        id="Citizen"
+                                        name="category"
+                                      />
+                                      <label for="Citizen">Citizen</label>
+                                    </div>
+                                    <div class="option5">
+                                      <input 
+                                        type="radio"
+                                        class="radio"
+                                        id="Doctor"
+                                        name="category"
+                                      />
+                                      <label for="Doctor">Doctor</label>
+                                    </div>
+                                  </div>   
+                                </div>
+                              </div>
+                              <div id="CitizenDiv">
+                                <label for="loc" >Location</label>
+                                <input type="text" placeholder="Write your current live location" name="loc" id="loc">
+                              </div>
+                              <div id="DoctorDiv" class="DoctorDiv" style="display: none;">
+                                <div class="select6">
+                                  <label for="medicalSpecialty" class="medicalSpecialty">Medical specialty</label>
+                                  <div class="select-box6">
+                                    <div class="selected6">
+                                      -
+                                    </div>
+                                    <div class="options-container6">
+                                      <div class="option6">
+                                        <input
+                                          type="radio"
+                                          class="radio"
+                                          id=""
+                                          name="category"
+                                        />
+                                        <label for=""></label>
+                                      </div>
+                                      <div class="option6">
+                                        <input 
+                                          type="radio"
+                                          class="radio"
+                                          id=""
+                                          name="category"
+                                        />
+                                        <label for=""></label>
+                                      </div>
+                                    </div>   
+                                  </div>
+                                </div>
+                                <div class="clinic-information">
+                                  <div class="clinic">
+                                    <h3>Clinic (not required)</h3>
+                                    <p>set your physical clinic information</p>  
+                                  </div>
+                                  <label for="clinicLoc" >Location</label>
+                                  <input type="text" placeholder="Write your current live location" name="clinicLoc" id="clinicLoc">
+                                  <label for="Cphone">Phone Number</label>
+                                  <input type="tel" id="Cphone" name="Cphone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" value="+963 " placeholder="999999999"> 
+                                </div> 
+                                <div class="joinUsBx">
+                                  <h3>Join as admin</h3>
+                                  <p>Help us in insert data and make the system better to help all syrian citizen all over the world.</p>
+                                  <div class="checkBx">
+                                    <label>
+                                      <input type="checkbox" name="joinUs">
+                                      <span>Join us</span>
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                              <input type="submit" value="Sign Up">
+                              <p class="signup">Already have an account?<a href="#signin" onclick="toggleForm();">Sign In.</a></p>
+                            </form>
+                          </div>
+                          <div class="imgBx"><img src="imgs/shutterstock_2.jpg"></div>
+                        </div>
+                      </div>  
+                </div>
+            </section>
+
+            <!--========== SEND MESSAGE ==========-->
+            <section class="send section" id="ContactUs">
+                <div class="send__container bd-container bd-grid">
+                    <div class="send__content">
+                        <h2 class="section-title-center send__title">Contact Us Now</h2>
+                        <form action="">
+                            <div class="send__direction">
+                                <textarea class="send__input" id="msg" name="msg" placeholder="Write a message.."></textarea>
+                            </div>
+                            <a href="#" class="button">Send</a>
+                        </form>
+                    </div>
+
+                    <div class="send__img">
+                        <img src="imgs/204245.png" alt="">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section">
+            <p class="footer__copy">&#169; 2021 SyrianMedCare. All right reserved</p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="js/main.js"></script>
+        <script>
+            function toggleForm(){
+              section = document.querySelector('.login');
+              container = document.querySelector('.login__container');
+              container.classList.toggle('active');
+              section.classList.toggle('active');
+            }
+          </script>
+          <!--========== Log in ==========-->
+          <script src="js/login.js"></script>
+    </body>
+</html>
